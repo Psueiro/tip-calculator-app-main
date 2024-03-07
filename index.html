@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel ="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Manrope:wght@200..800&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+  <title>Frontend Mentor | Tip calculator app</title>
+  <script src="script.js"></script>
+</head>
+<body>
+  <div id ="logo">
+    <img src="images/logo.svg">
+  </div>
+
+  <div id = "maincontainer">
+    <div class ="contents">
+
+    <div class = "separator">
+     <div class ="lefttitle">
+       Bill       
+    </div>
+
+    <input type="number" placeholder="0" id = "billnumber" onkeyup="setBill()" autocomplete="off">
+
+      
+    </div>
+
+    <div class = "separator">
+      <div class ="lefttitle">
+        Select Tip %       
+      </div>      
+
+      <div id = "tippercents">
+        <div class = "tippercentbutton" type="button" id = "5percent" onclick="replyClick(this.id)">
+          5%
+        </div>
+        <div class = "tippercentbutton" type="button" id = "10percent" onclick="replyClick(this.id)">
+          10%
+        </div>
+        <div class = "tippercentbutton" type="button" id = "15percent" onclick="replyClick(this.id)">
+          15%
+        </div>
+        <div class = "tippercentbutton" type="button" id = "25percent" onclick="replyClick(this.id)">
+          25%
+        </div>
+        <div class = "tippercentbutton" type="button" id = "50percent" onclick="replyClick(this.id)">
+          50%
+        </div>
+        <div class = "tippercent">
+          <input type="number" placeholder="Custom" id = "tippercentinput" onkeyup="setPercentage()" autocomplete="off">
+        </div>
+      </div>
+     
+    </div>
+
+    <div class = "separator">
+
+        <div class ="lefttitle" id = "peopletitle">
+            Number of People       
+          <div id  ="zeropeoplewarning">
+          </div>
+        </div>
+
+      <input type="number" placeholder="0" id ="peopleamount" onkeyup="setPeople()" autocomplete="off">
+
+    </div>
+
+    </div>
+    <div class ="contents" id = "resultbox">
+
+      <div id="resultboxcontents">
+        <div class ="resultboxdivison">
+
+          <div class ="resultboxleft">
+            <div class ="resultboxtitle">
+              Tip Amount
+            </div>
+            <div class ="resultboxperson">
+            / person
+            </div>
+          </div>
+
+          <div class ="result" id = "tipamount">
+            $0.00
+          </div>
+        </div>
+        
+        <div class = "resultboxdivison">
+
+          <div class ="resultboxleft">
+            <div class ="resultboxtitle">
+            Total
+            </div>
+            <div class ="resultboxperson">
+            / person
+            </div>
+          </div>
+
+          <div class ="result" id ="total">
+            $0.00
+          </div>
+        </div>
+        
+        <div id = "resetbutton" onclick="reset()">
+          Reset
+        </div>
+        
+      </div>
+
+    </div>
+  </div>
+  
+</body>
+</html>

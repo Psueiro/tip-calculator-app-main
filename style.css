@@ -1,0 +1,182 @@
+body{
+    background-color: hsl(185, 41%, 84%);
+    
+}
+
+#maincontainer{
+    display: flex;
+    flex-direction: row;
+    font-family: "space mono";
+    font-weight: 700;
+    border-radius: 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.lefttitle{
+    color:hsl(186, 14%, 43%);
+    font-size: 12px;
+}
+
+#logo{
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#logo img{
+    width: 50px;
+    height: auto;
+}
+
+.tippercent{
+
+    border-radius: 5px;
+    height: auto;
+    margin:5px;
+    width: 75px;
+    height: 25px;
+}
+
+.tippercentbutton{
+    background-color: hsl(183, 100%, 15%);
+    text-align: center;
+    padding: 5px;
+    font-weight: bold;
+    border-radius: 5px;
+    height: auto;
+    margin:5px;
+    width: 75px;
+    height: 25px;
+}
+
+.tippercentbutton:hover{
+    background-color: hsl(185, 41%, 84%);
+    color: hsl(183, 100%, 15%);
+
+}
+
+#tippercentinput{
+    width: 75px;
+    height: 25px;
+    padding: 5px;
+}
+
+.contents{
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.separator{
+    margin: 20px;
+}
+
+input{
+    border-radius: 3px;
+    appearance: textfield;
+    border-style: solid;
+    border-width: 0px;
+    text-align: right;
+    font-family: "space mono";
+    font-weight: 700;
+    font-size: 20px;
+    padding: 5px;
+    padding-right: 10px;
+    background-color: hsl(189, 41%, 97%);
+    color: hsl(183, 100%, 15%);
+    outline: 2px solid hsl(189, 41%, 97%);
+
+}
+
+input:focus{
+    outline: 2px solid hsl(172, 67%, 45%);
+}
+
+#billnumber{
+    background: url(images/icon-dollar.svg) no-repeat scroll 10px 10px;
+    padding-left:30px;
+    background-color: hsl(189, 41%, 97%);
+}
+
+#peopleamount{
+    background: url(images/icon-person.svg) no-repeat scroll 10px 10px;
+    padding-left:30px;
+    background-color: hsl(189, 41%, 97%);
+}
+
+#peopletitle{
+    display: flex;
+    flex-direction: row;
+}
+
+#zeropeoplewarning{
+    margin-left: auto;
+    color: #B47C6D;
+}
+
+#maincontainer{
+    background-color: white;
+    width: 50%;
+    border-radius: 15px;
+}
+
+#tippercents{
+    display: grid;
+    color: white;
+    grid-template-columns: 33% 33% 33%;
+}
+
+#resultbox{
+    background-color: hsl(183, 100%, 15%);
+    border-radius: 15px;
+    margin-left: auto;
+    width: 50%;
+}
+
+#resultboxcontents{
+    margin: 10%;
+    flex-direction: column;
+}
+
+.resultboxdivison{
+    display: flex;
+    margin-bottom: 15%;
+    flex-direction: row;
+}
+
+.resultboxtitle
+{
+    color:white;
+    font-size: 10px;
+}
+
+.resultboxperson
+{
+    color:hsl(172, 67%, 45%);
+    font-size: 8px;
+}
+
+#resetbutton{
+    background-color: hsl(172, 67%, 45%);
+    color: hsl(183, 100%, 15%);
+    border-radius: 3px;
+    text-transform: uppercase;
+    margin-top:60%;
+    padding:5px;
+    text-align: center;
+    font-size: 15px;
+}
+
+#resetbutton:hover{
+    background-color: hsl(185, 41%, 84%);
+}
+
+.result{
+    color:hsl(172, 67%, 45%);
+    font-size: 30px;
+    margin-left: auto;
+}
