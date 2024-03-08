@@ -1,4 +1,3 @@
-
 let bill = 0;
 let percentage = 0;
 let people = 0;
@@ -76,14 +75,27 @@ function calculate()
 
 function resetcheck()
 {
-    // if(bill == 0 && percentage == 0 && people == 0)
-    // {
-    //     document.getElementById("resetbutton").style.backgroundColor = "hsl(172, 67%, 25%)";
+     if(bill == 0 && percentage == 0 && people == 0)
+    {
+         document.getElementById("resetbutton").style.backgroundColor = "hsl(172, 67%, 25%)";
 
-    // }else
-    // {
-    //     document.getElementById("resetbutton").style.backgroundColor = "hsl(172, 67%, 45%)";
-    // }
+    }else
+    {
+        document.getElementById("resetbutton").style.backgroundColor = "hsl(172, 67%, 45%)";
+    }
+}
+
+function resetHover()
+{
+    if(bill == 0 && percentage == 0 && people == 0) return;
+    resetbutton.style.backgroundColor = "hsl(185, 41%, 84%)";
+}
+
+
+function resetHoverExit()
+{
+    if(bill == 0 && percentage == 0 && people == 0) return;
+    resetbutton.style.backgroundColor = "hsl(172, 67%, 45%)";
 }
 
 
@@ -100,4 +112,16 @@ function reset()
     document.getElementById("total").innerHTML = "$0.00";
     document.getElementById("tippercentinput").value = "";
     resetButtons();
+    resetcheck();
 }
+
+function onLoadFunctions()
+{
+    resetbutton.addEventListener("mouseover",resetHover());
+    resetbutton.addEventListener("mouseout",resetHoverExit());
+    resetcheck();
+}
+
+document.addEventListener('DOMContentLoaded', function () {
+    onLoadFunctions();    
+})

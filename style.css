@@ -161,7 +161,6 @@ input:focus{
 }
 
 #resetbutton{
-    background-color: hsl(172, 67%, 45%);
     color: hsl(183, 100%, 15%);
     border-radius: 3px;
     text-transform: uppercase;
@@ -171,9 +170,7 @@ input:focus{
     font-size: 15px;
 }
 
-#resetbutton:hover{
-    background-color: hsl(185, 41%, 84%);
-}
+
 
 .result{
     color:hsl(172, 67%, 45%);
